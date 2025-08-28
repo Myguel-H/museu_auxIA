@@ -63,8 +63,8 @@ export default function ArtVisionDashboard() {
                 <Brain className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">ArtVision AI</h1>
-                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação de Obras de Arte</p>
+                <h1 className="text-2xl font-bold text-foreground">Museu - Utfpr</h1>
+                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação de Obras de Arte da Utfpr</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function ArtVisionDashboard() {
               <Link href="/submit">
                 <Button variant="outline" className="gap-2 bg-transparent">
                   <Upload className="w-4 h-4" />
-                  Submeter Obra
+                  Enviar Obra
                 </Button>
               </Link>
               <div className="relative">
