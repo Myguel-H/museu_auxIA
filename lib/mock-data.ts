@@ -11,7 +11,7 @@ export const mockArtworks = [
     location: "Fazenda de morango",
     value: 850000000,
     description: "Retrato da coleta de morango durante o Projeto Rondon",
-    image: "/coleta_morango.png",
+    image: "/coleta_morango.JPG",
     conservation: "Excelente",
     techniques: ["Coleta caseira", "Cultura"],
   },
