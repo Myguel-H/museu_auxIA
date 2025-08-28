@@ -63,8 +63,8 @@ export default function ArtVisionDashboard() {
                 <Brain className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">Galeria Rondon - Guapirama</h1>
-                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação de do Projeto Rondon </p>
+                <h1 className="text-2xl font-bold text-foreground">Galeria Rondon UTFPR - Guapirama</h1>
+                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação do Projeto Rondon </p>
               </div>
             </div>
 
