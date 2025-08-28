@@ -59,62 +59,47 @@ export const mockArtworks = [
   },
   {
     id: 5,
-    title: "David",
-    artist: "Michelangelo",
-    year: 1504,
-    period: "Renascimento",
+    title: "Caramelo, o ser supremo",
+    artist: "Deus",
+    year: 2025,
+    period: "julho",
     dimensions: "517 cm altura",
-    location: "Galleria dell'Accademia, Florença",
-    value: 200000000,
-    description: "Escultura em mármore representando o herói bíblico David.",
-    image: "/michelangelo-david-sculpture.png",
-    conservation: "Bom",
-    techniques: ["Escultura em mármore", "Contrapposto", "Anatomia realista"],
+    location: "Biblioteca Local",
+    value: 2000000000000000,
+    description: "O poderoso supremo magnifico ser cachorro caramelo.",
+    image: "/caramelo.png",
+    conservation: "Supremo",
+    techniques: ["Poder Absoluto", "Destruição do Lapso Temporal", "Aura Infinita"],
   },
   {
     id: 6,
-    title: "Paisagem ao Pôr do Sol",
-    artist: "Maria Silva",
-    year: 2023,
-    period: "Contemporâneo",
+    title: "Mestre Cuca",
+    artist: "Bagriel",
+    year: 2025,
+    period: "Julho",
     dimensions: "60 cm × 80 cm",
-    location: "Coleção Particular",
-    value: 15000,
+    location: "Cozinha, Colegio Maria Antonietta",
+    value: 150,
     description:
-      "Uma bela paisagem pintada durante uma viagem ao interior. Retrata o pôr do sol sobre montanhas com técnica impressionista.",
-    image: "/paisagem-p-r-do-sol-montanhas-impressionista.png",
+      "Moderno e sabido das coisas, Mestre cuca preparando seu delicioso Pão de Abobora.",
+    image: "/mestrenacozinha.png",
     conservation: "Excelente",
-    techniques: ["Óleo sobre tela", "Plein air", "Pinceladas soltas"],
+    techniques: ["Cozinhamento insano", "Mestre", "Mão de cozinheiro"],
   },
   {
     id: 7,
-    title: "Retrato de Família",
-    artist: "Carlos Mendes",
-    year: 1890,
-    period: "Realismo",
+    title: "Professor De Baixo Orçamento",
+    artist: "Lucas Devolvido",
+    year: 2025,
+    period: "Julho",
     dimensions: "70 cm × 90 cm",
-    location: "Coleção Particular",
+    location: "Colegio Maria Antonietta",
     value: 35000,
     description:
-      "Retrato realista de uma família do século XIX. A obra apresenta técnicas clássicas de retrato com atenção especial aos detalhes faciais.",
-    image: "/retrato-fam-lia-s-culo-xix-realista-cl-ssico.png",
+      "Professor ensinando seus alunos a como compilar o codigo sem dar bad_alloc.",
+    image: "/professor.png",
     conservation: "Bom",
-    techniques: ["Óleo sobre tela", "Técnica clássica", "Chiaroscuro"],
-  },
-  {
-    id: 8,
-    title: "Abstração Geométrica",
-    artist: "Artista Desconhecido",
-    year: 1960,
-    period: "Arte Moderna",
-    dimensions: "50 cm × 70 cm",
-    location: "Coleção Particular",
-    value: 8000,
-    description:
-      "Composição abstrata com formas geométricas em cores vibrantes. Possivelmente influenciada pelo movimento construtivista.",
-    image: "/abstra--o-geom-trica-construtivista-cores-vibrante.png",
-    conservation: "Regular",
-    techniques: ["Acrílica sobre madeira", "Geometria abstrata"],
+    techniques: ["Mestre das artes programisticas", "Técnica clássica"],
   },
 ]
 
@@ -123,11 +108,11 @@ export const mockAnalyses = [
     artworkId: 1,
     confidence: 98.5,
     style: {
-      detected: "Renascimento Italiano",
+      detected: "Projeto Rondon",
       confidence: 99.2,
     },
     period: {
-      detected: "Alto Renascimento",
+      detected: "Julho",
       confidence: 97.8,
     },
     authenticity: {
@@ -155,7 +140,7 @@ export const mockAnalyses = [
       ],
     },
     value: {
-      estimated: 850000000,
+      estimated: 0,
       factors: [
         "Obra-prima reconhecida mundialmente",
         "Raridade absoluta - única no mundo",
@@ -166,27 +151,27 @@ export const mockAnalyses = [
     },
     processingTime: 45.2,
     observations:
-      "Obra autêntica com técnicas características de Leonardo da Vinci. O sfumato está perfeitamente executado, demonstrando a maestria técnica do artista. A análise espectroscópica confirma o uso de pigmentos consistentes com o período renascentista.",
+      "Tecnica de colher Morangos incriveis, e comelos tambem !.",
   },
   {
     artworkId: 2,
     confidence: 94.3,
     style: {
-      detected: "Pós-Impressionismo",
+      detected: "Pai ",
       confidence: 96.1,
     },
     period: {
-      detected: "Pós-Impressionismo",
+      detected: "Um pai cuidadoso",
       confidence: 95.7,
     },
     authenticity: {
       score: 98.2,
       probability: 97.9,
       indicators: [
-        "Pinceladas características de Van Gogh identificadas",
+        "Pinceladas características de um bom pai identificadas",
         "Uso de impasto típico do artista",
-        "Paleta de cores consistente com o período de Saint-Paul-de-Mausole",
-        "Análise de tinta confirma pigmentos do século XIX",
+        "Paleta de cores consistente com o a roça",
+        "Análise de tinta confirma pigmentos do século XXI",
         "Correspondência com cartas do artista descrevendo a obra",
       ],
     },
@@ -215,13 +200,13 @@ export const mockAnalyses = [
     },
     processingTime: 38.7,
     observations:
-      "Pinceladas características de Van Gogh claramente identificadas. O movimento e energia típicos do período estão presentes. A técnica de impasto cria a textura tridimensional característica do artista.",
+      "Cuidados característicos de um bom pai claramente identificadas. O movimento e energia típicos do período estão presentes. A técnica de impasto cria a textura tridimensional característica do artista.",
   },
   {
     artworkId: 3,
     confidence: 96.8,
     style: {
-      detected: "Cubismo Analítico",
+      detected: "Capa de jornal",
       confidence: 98.4,
     },
     period: {
@@ -232,7 +217,7 @@ export const mockAnalyses = [
       score: 99.1,
       probability: 98.7,
       indicators: [
-        "Fragmentação geométrica típica do cubismo de Picasso",
+        "Fragmentação geométrica típica do cubismo dos guri da UTFPR",
         "Uso de monocromia característico do período azul-cinza",
         "Técnica de colagem identificada em algumas áreas",
         "Assinatura autêntica verificada por especialistas",
@@ -264,13 +249,13 @@ export const mockAnalyses = [
     },
     processingTime: 52.1,
     observations:
-      "Composição cubista autêntica com fragmentação e perspectiva múltipla características de Picasso. A obra demonstra a evolução do artista em direção à abstração geométrica.",
+      "Composição cubista autêntica com fragmentação e perspectiva múltipla características dos guri. A obra demonstra a evolução dos guri em direção à abstração geométrica.",
   },
   {
     artworkId: 4,
     confidence: 91.7,
     style: {
-      detected: "Impressionismo",
+      detected: "Tacada Implacavel",
       confidence: 94.3,
     },
     period: {
@@ -281,10 +266,10 @@ export const mockAnalyses = [
       score: 96.5,
       probability: 95.2,
       indicators: [
-        "Técnica de pinceladas soltas típica de Monet",
+        "Técnica de pinceladas soltas típica de Bagriel",
         "Uso de cores puras sem mistura prévia",
         "Captura de luz natural característica",
-        "Série documentada dos nenúfares de Giverny",
+        "Série documentada dos rondonistas",
         "Análise química confirma pigmentos impressionistas",
       ],
     },
@@ -318,28 +303,28 @@ export const mockAnalyses = [
     },
     processingTime: 41.8,
     observations:
-      "Técnica impressionista autêntica com captura magistral da luz sobre a água. Algumas áreas mostram sinais de envelhecimento natural que requerem atenção conservativa.",
+      "Técnica impressionista autêntica com captura do android do Lucas Devolvido. Algumas áreas mostram sinais de envelhecimento naturalm normal pois ele faz engenharia, mas só tem 20 anos.",
   },
   {
     artworkId: 5,
     confidence: 97.2,
     style: {
-      detected: "Escultura Renascentista",
+      detected: "Caramelo, o ser supremo",
       confidence: 98.9,
     },
     period: {
-      detected: "Alto Renascimento",
+      detected: "Alto Grau de Poder",
       confidence: 96.4,
     },
     authenticity: {
       score: 98.8,
       probability: 98.1,
       indicators: [
-        "Técnicas de talha características de Michelangelo",
+        "Técnicas de talha características de Deus",
         "Proporções anatômicas perfeitas",
         "Uso do contrapposto clássico",
-        "Mármore de Carrara da qualidade utilizada no período",
-        "Marcas de ferramentas consistentes com o século XVI",
+        "Poder da qualidade utilizada no período",
+        "Marcas de ferramentas consistentes com o século XXI",
       ],
     },
     techniques: ["Talha em mármore", "Contrapposto", "Anatomia realista", "Polimento renascentista"],
@@ -367,17 +352,17 @@ export const mockAnalyses = [
     },
     processingTime: 67.3,
     observations:
-      "Escultura autêntica com técnicas magistrais de Michelangelo. A anatomia e proporções são perfeitas, demonstrando o conhecimento profundo do artista sobre o corpo humano.",
+      "Escultura autêntica com técnicas magistrais de Deus. A anatomia e proporções são perfeitas, demonstrando o conhecimento profundo do artista sobre o caramelo.",
   },
   {
     artworkId: 6,
     confidence: 92.3,
     style: {
-      detected: "Impressionismo",
+      detected: "Mestre Cuca",
       confidence: 94.1,
     },
     period: {
-      detected: "Século XXI",
+      detected: "Cozinheiro Supremo",
       confidence: 98.7,
     },
     authenticity: {
@@ -420,11 +405,11 @@ export const mockAnalyses = [
     artworkId: 7,
     confidence: 95.7,
     style: {
-      detected: "Realismo",
+      detected: "Professor De Baixo Orçamento",
       confidence: 97.2,
     },
     period: {
-      detected: "Século XIX",
+      detected: "Anão",
       confidence: 94.8,
     },
     authenticity: {
@@ -433,7 +418,7 @@ export const mockAnalyses = [
       indicators: [
         "Técnicas clássicas de retrato identificadas",
         "Uso de chiaroscuro típico do período",
-        "Pigmentos consistentes com século XIX",
+        "Pigmentos consistentes com século XXI",
         "Craquelamento natural apropriado para a idade",
         "Estilo consistente com escola realista brasileira",
       ],
@@ -463,57 +448,9 @@ export const mockAnalyses = [
     },
     processingTime: 42.1,
     observations:
-      "Análise automática detectou características de realismo do século XIX. A obra apresenta técnicas clássicas de retrato com excelente execução do chiaroscuro. O craquelamento natural é consistente com a idade estimada da obra.",
+      "Análise automática detectou características de realismo do século XXI. A obra apresenta técnicas clássicas de retrato com excelente execução do Lucas Devolvido. O craquelamento natural é consistente com a idade estimada da obra.",
   },
-  {
-    artworkId: 8,
-    confidence: 87.9,
-    style: {
-      detected: "Arte Moderna",
-      confidence: 89.3,
-    },
-    period: {
-      detected: "Século XX",
-      confidence: 91.7,
-    },
-    authenticity: {
-      score: 82.1,
-      probability: 79.8,
-      indicators: [
-        "Formas geométricas características do construtivismo",
-        "Uso de cores primárias e secundárias",
-        "Composição dinâmica típica do período",
-        "Pigmentos acrílicos consistentes com década de 1960",
-        "Ausência de assinatura dificulta autenticação completa",
-      ],
-    },
-    techniques: ["Geometria abstrata", "Acrílica sobre madeira", "Composição dinâmica"],
-    colorPalette: ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FFEAA7"],
-    composition: 85.6,
-    conservation: {
-      status: "Regular",
-      issues: ["Pequenas perdas de tinta nas bordas", "Suporte de madeira com sinais de umidade"],
-      recommendations: [
-        "Restauração das áreas com perda de tinta",
-        "Tratamento do suporte de madeira",
-        "Controle rigoroso de umidade",
-        "Avaliação estrutural completa",
-      ],
-    },
-    value: {
-      estimated: 8000,
-      factors: [
-        "Obra do período moderno interessante",
-        "Artista desconhecido reduz valor significativamente",
-        "Necessidade de restauração afeta preço",
-        "Estilo construtivista tem demanda específica",
-        "Tamanho médio adequado para colecionadores",
-      ],
-    },
-    processingTime: 35.7,
-    observations:
-      "Análise automática detectou características de arte moderna com influências construtivistas. A ausência de assinatura e os problemas de conservação requerem atenção. Recomenda-se pesquisa adicional sobre proveniência e possível autoria.",
-  },
+  
 ]
 
 export const mockSubmissions = [
