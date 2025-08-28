@@ -9,7 +9,7 @@ export const mockArtworks = [
     period: "Julho",
     dimensions: "77 cm × 53 cm",
     location: "Fazenda de morango",
-    value: 850000000,
+    value: Sentimental,
     description: "Retrato da coleta de morango durante o Projeto Rondon",
     image: "/coleta_morango.JPG",
     conservation: "Excelente",
