@@ -63,8 +63,8 @@ export default function ArtVisionDashboard() {
                 <Brain className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">Museu - Utfpr</h1>
-                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação de Obras de Arte da Utfpr</p>
+                <h1 className="text-2xl font-bold text-foreground">Galeria Rondon - Guapirama</h1>
+                <p className="text-sm text-muted-foreground">Sistema de Análise e Classificação de do Projeto Rondon </p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function ArtVisionDashboard() {
               <Link href="/submit">
                 <Button variant="outline" className="gap-2 bg-transparent">
                   <Upload className="w-4 h-4" />
-                  Enviar Obra
+                  Enviar Imagem
                 </Button>
               </Link>
               <div className="relative">
@@ -124,8 +124,8 @@ export default function ArtVisionDashboard() {
               <TabsContent value="gallery" className="space-y-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h2 className="text-3xl font-bold text-foreground">Galeria de Obras de Arte</h2>
-                    <p className="text-muted-foreground mt-1">{filteredArtworks.length} obras encontradas</p>
+                    <h2 className="text-3xl font-bold text-foreground">Galeria De Imagens</h2>
+                    <p className="text-muted-foreground mt-1">{filteredArtworks.length} Imagens encontradas</p>
                   </div>
 
                   <Select defaultValue="recent">
@@ -163,9 +163,9 @@ export default function ArtVisionDashboard() {
                 ) : (
                   <Card className="p-12 text-center">
                     <Brain className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Selecione uma obra para análise</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Selecione uma Imagem para análise</h3>
                     <p className="text-muted-foreground">
-                      Escolha uma obra de arte na galeria para visualizar a análise detalhada de IA
+                      Escolha uma Imagem na galeria para visualizar a análise detalhada de IA
                     </p>
                   </Card>
                 )}
@@ -181,12 +181,12 @@ export default function ArtVisionDashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                      <CardTitle className="text-sm font-medium">Total de Obras</CardTitle>
+                      <CardTitle className="text-sm font-medium">Total de Imagens</CardTitle>
                       <Eye className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">{mockArtworks.length}</div>
-                      <p className="text-xs text-muted-foreground">+2 desde o último mês</p>
+                      <p className="text-xs text-muted-foreground">0 desde o último mês</p>
                     </CardContent>
                   </Card>
 
@@ -203,12 +203,12 @@ export default function ArtVisionDashboard() {
 
                   <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                      <CardTitle className="text-sm font-medium">Valor Total</CardTitle>
+                      <CardTitle className="text-sm font-medium">Valor Sentimental</CardTitle>
                       <TrendingUp className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                      <div className="text-2xl font-bold">€1.39B</div>
-                      <p className="text-xs text-muted-foreground">+5.2% valorização anual</p>
+                      <div className="text-2xl font-bold">Muito</div>
+                      <p className="text-xs text-muted-foreground">+9.0% valorização sentimental</p>
                     </CardContent>
                   </Card>
 
@@ -219,7 +219,7 @@ export default function ArtVisionDashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">127</div>
-                      <p className="text-xs text-muted-foreground">+23 este mês</p>
+                      <p className="text-xs text-muted-foreground">+2 este mês</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -231,7 +231,7 @@ export default function ArtVisionDashboard() {
                       <CardTitle>Distribuição por Período</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      {["Renascimento", "Barroco", "Impressionismo", "Pós-Impressionismo", "Modernismo"].map(
+                      {["Amor", "Felicidade", "Impressionismo", "Pós-Impressionismo", "Cultura"].map(
                         (period, index) => {
                           const count = mockArtworks.filter((a) => a.period === period).length
                           const percentage = (count / mockArtworks.length) * 100
@@ -240,7 +240,7 @@ export default function ArtVisionDashboard() {
                               <div className="flex justify-between text-sm">
                                 <span>{period}</span>
                                 <span>
-                                  {count} obras ({percentage.toFixed(1)}%)
+                                  {count} imagens ({percentage.toFixed(1)}%)
                                 </span>
                               </div>
                               <Progress value={percentage} className="h-2" />
@@ -253,7 +253,7 @@ export default function ArtVisionDashboard() {
 
                   <Card>
                     <CardHeader>
-                      <CardTitle>Estado de Conservação</CardTitle>
+                      <CardTitle>Estado de Qualidade</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       {[
@@ -268,7 +268,7 @@ export default function ArtVisionDashboard() {
                             <div className="flex justify-between text-sm">
                               <span>{status}</span>
                               <span>
-                                {count} obras ({percentage.toFixed(1)}%)
+                                {count} imagens ({percentage.toFixed(1)}%)
                               </span>
                             </div>
                             <div className="w-full bg-muted rounded-full h-2">
